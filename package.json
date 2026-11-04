@@ -14,6 +14,15 @@
     "README.md",
     "LICENSE"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daphne999/dsh-warden.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Daphne999/dsh-warden/issues"
+  },
+  "homepage": "https://github.com/Daphne999/dsh-warden#readme",
+  "author": "Daphne999",
   "license": "MIT",
   "keywords": [
     "dsh-plugin",
