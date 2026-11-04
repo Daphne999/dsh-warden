@@ -1,0 +1,38 @@
+{
+  "name": "dsh-warden",
+  "version": "0.1.0",
+  "description": "Plugin security review for DeepSeek Harness: audit a plugin's manifest, install hooks, network egress and declared permissions before you enable it. | 装插件前的安全体检：扫安装脚本、原生依赖、外联域名与危险 API，给出风险评级。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dsh-plugin",
+    "security",
+    "audit",
+    "supply-chain",
+    "permissions"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": ">=3.18.1"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/schemastery": {
+      "optional": true
+    }
+  }
+}
